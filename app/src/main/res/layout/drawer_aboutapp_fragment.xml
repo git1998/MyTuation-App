@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardColor">
+
+
+    <RelativeLayout
+        android:id="@+id/fsvks"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cardColor">
+
+
+        <ImageView
+            android:id="@+id/activity_main_drawerIv"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/jastest_grey"
+            android:src="@drawable/ic_chevron_left_black_24dp"/>
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/activity_detailed_titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="4dp"
+            android:layout_toRightOf="@id/activity_main_drawerIv"
+            android:layout_marginLeft="12dp"
+            android:text="About LearnYes"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/varela"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"/>
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/drawer_aboutapp_fragment_seePrivacyTv"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fsvks"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="14dp"
+        android:text="Privacy Policy"
+        android:textColor="@color/colorPrimaryGreen"
+        android:background="@drawable/textview_background_bottom"
+        android:fontFamily="@font/varela" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="visible"
+        android:id="@+id/dmsbmbms"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fsvks"
+        app:cardCornerRadius="60dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:padding="20dp"
+            android:src="@drawable/spash_rocket"
+            android:tint="@color/cardColor"
+            android:background="@color/colorPrimaryGreen"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/fsknfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dmsbmbms"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/fsknfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dafdfa"
+            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/jast_grey"
+            android:text="Powered by" />
+
+
+
+        <TextView
+            android:id="@+id/dafdfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fcmzfj"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/mo_re"
+            android:textColor="@color/colorPrimaryBlue"
+            android:textStyle="bold"
+            android:text="Mignlish Mantra Classes" />
+
+
+        <TextView
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:text="SBI Square , Wardha - 445301" />
+
+
+
+        <TextView
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:text="Contact us : 7842448202" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/fddfsdff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fsknfs"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:fontFamily="@font/varela"
+        android:textColor="@color/jast_grey"
+        android:text="Faculty" />
+
+
+
+
+    <GridLayout
+        android:id="@+id/fdskbfksb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/fddfsdff"
+        android:columnCount="2">
+
+
+
+        <LinearLayout
+        android:layout_columnWeight="1"
+        android:id="@+id/vhvhvhv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <TextView
+            android:id="@+id/dafdfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fcmzfj"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:fontFamily="@font/mo_re"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Abhijit M Bodulwar" />
+
+
+        <TextView
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="12dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:text="Founder , source code" />
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:text="Contact us : 7842448202" />
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:id="@+id/fskfmdsnbfmdznfs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/fsmfcks"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fsvks"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_chetan_thakre2"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/dafdfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/fcmzfj"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:fontFamily="@font/mo_re"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Chetan M Thakre" />
+
+
+            <TextView
+                android:id="@+id/fcmzfj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:text="Co-Founder , source code" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/fcmzfj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:text="Contact us : 7842448202" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:id="@+id/fskfmdsnbfmdznfs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/fsmfcks"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fsvks"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_chetan_thakre2"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/dafdfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/fcmzfj"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:fontFamily="@font/mo_re"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Chetan M Thakre" />
+
+
+            <TextView
+                android:id="@+id/fcmzfj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:text="Co-Founder , source code" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/fcmzfj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:text="Contact us : 7842448202" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:id="@+id/fskfmdsnbfmdznfs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/fsmfcks"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fsvks"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_chetan_thakre2"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/dafdfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/fcmzfj"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:fontFamily="@font/mo_re"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Chetan M Thakre" />
+
+
+            <TextView
+                android:id="@+id/fcmzfj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:text="Co-Founder , source code" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/fcmzfj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:text="Contact us : 7842448202" />
+
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/fskfbjsb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:layout_alignParentBottom="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/fsknfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dafdfa"
+            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/jast_grey"
+            android:text="Developed by" />
+
+
+
+        <TextView
+            android:id="@+id/dafdfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fcmzfj"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:fontFamily="@font/mo_re"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="source code" />
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="12dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:text="App development company" />
+
+
+
+        <TextView
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:text="Contact : dev.vsl@gmail.com" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

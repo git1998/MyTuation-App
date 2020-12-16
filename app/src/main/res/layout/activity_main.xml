@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:background="@color/thodkamigrey">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+            <RelativeLayout
+                android:id="@+id/poaiaa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@color/cardColor">
+
+                <ImageView
+                    android:id="@+id/activity_main_drawerIv"
+                    android:layout_height="34dp"
+                    android:layout_width="34dp"
+                    android:tint="@color/darkGrey"
+                   android:layout_centerVertical="true"
+                    android:backgroundTint="@color/jastest_grey"
+                    android:background="@drawable/ic_menu_black_24dp"/>
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/activity_main_titleTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/activity_main_drawerIv"
+                      android:layout_centerVertical="true"
+                       android:paddingBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="TutorPro"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/doppio_one"/>
+
+
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/activity_main_searchIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:tint="@color/darkGrey"
+                    android:backgroundTint="@color/jastest_grey"
+                    android:background="@drawable/ic_search_black_24dp"/>
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/activity_main_browseIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search_2"
+                    android:tint="@color/jastest_grey" />
+
+
+            </RelativeLayout>
+
+
+        <View
+            android:id="@+id/paoaoa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/poaiaa"
+            android:background="@color/grey"/>
+
+
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:visibility="visible"
+            android:id="@+id/activity_main_parentNestedNsv"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            android:layout_below="@id/paoaoa"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".Activity.MainActivity">
+
+            <fragment
+                android:id="@+id/host_main"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/main_nav" />
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_above="@id/bottomNavigation"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:visibility="visible"
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/home_menu"
+            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+            app:itemTextColor="@drawable/bottom_nav_text_color_selector"
+            app:labelVisibilityMode="labeled"
+            app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+            app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cardColor"/>
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottomNavigation"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="2dp"
+            android:background="@color/faintest_google_blue">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/record_student_image_view"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/black">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="@color/cardColor"
+                    android:text="A"
+                    android:textSize="38dp"
+                    android:src="@drawable/leaderboard_profile_shubham"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/record_student_image_view"
+                android:layout_marginLeft="12dp">
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Live class"
+                    android:textSize="10dp"
+                    android:textColor="@color/primaryRed"
+                    android:fontFamily="@font/varela"/>
+
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physics | Laws of motion"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/varela"/>
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 - 11:00"
+                    android:textSize="10dp"
+                    android:textColor="@color/jastest_grey"
+                    android:fontFamily="@font/varela"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/main_single_yourcourses_buyCourseTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                android:paddingVertical="8dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="JOIN"
+                android:textColor="@color/cardColor"
+                android:fontFamily="@font/varela"
+                android:background="@color/colorPrimaryGreen"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/main_drawer_header"
+                layout="@layout/drawer_header" />
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

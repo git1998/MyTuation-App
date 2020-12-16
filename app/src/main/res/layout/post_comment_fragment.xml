@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/doubt_comment_fragment_answersLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/cardColor">
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/question_single_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+             android:layout_marginLeft="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/doppio_one"
+                android:text="Comments"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doubt_comment_fragmenr_recyclerviewRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="40dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/activity_video_sendDoubtRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardColor">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <ImageView
+            android:id="@+id/single_selectfiltersubject_cv"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+            android:gravity="center"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/cardColor"
+            android:tint="@color/colorPrimaryGreen"
+            android:src="@drawable/ic_camera_alt_black_24dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/doubt_comment_fragmenr_startAnsweringEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:paddingVertical="8dp"
+            android:layout_toLeftOf="@id/doubt_comment_fragmenr_sendTv"
+            android:layout_toRightOf="@+id/single_selectfiltersubject_cv"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/black"
+            android:hint="Start answering now!"
+            android:textSize="14dp"
+            android:background="@color/cardColor"/>
+
+
+
+        <TextView
+            android:id="@+id/doubt_comment_fragmenr_sendTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/varela"
+            android:text="SEND"
+            android:textColor="@color/cardColor"
+            android:background="@color/jast_grey"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:paddingHorizontal="16dp">
+
+
+
+            <com.example.minglishmantra_beta.RecursiveRadioGroup
+                android:id="@+id/clssroom_fragment_classtests_subjectsRrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+            </com.example.minglishmantra_beta.RecursiveRadioGroup>
+
+        </HorizontalScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/grey"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classroom_fragment_classtests_testRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:background="@color/cardColor">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
